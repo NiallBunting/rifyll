@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: machine-learning python numpy scikit-learn
+tags: Sleeps-5 Apartment In-town
 date: 2014-12-30
 thumbnail: http://placehold.it/100x100
 title: A Demo blog
@@ -17,21 +17,26 @@ photos:
 - http://placehold.it/100x100
 - http://placehold.it/100x100
 - http://placehold.it/100x100
-datesavailable: test
+datesavailable: Avalible All Year
 amenities:
-  rooms:
-    double: 1
-    single: 2
-    bathroom: 1
-  amenities:
-    hottub: yes
-    internet: yes
-    garden: yes
-  policies:
-    smoking: no
-    payment: card
-    kids: yes
-    pets: dogs only
+  Rooms:
+    Double 2: null
+    Single: null
+    Bathroom: null
+  Amenities:
+    Hottub: null
+    Internet: fa-wifi
+    Garden: null
+    Need car: fa-car
+    Pictursce: fa-camera
+    Cycle Trails: fa-bicycle
+    Games Provided: fa-gamepad
+    Disabled Access: fa-wheelchair
+  Policies:
+    No smoking: fa-minus-square
+    Card payment: fa-credit-card
+    Kids: fa-child
+    Pets: fa-paw
 ---
 
 Lorem ipsum dolor sit amet, vivamus quis, urna ligula, aliquet wisi fermentum pellentesque. Vestibulum euismod erat urna vestibulum, per cras tempus bibendum vestibulum, cras a, mus et. Ultrices adipiscing dolor, pellentesque neque nunc eros, sit etiam quam a.

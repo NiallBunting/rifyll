@@ -24,11 +24,30 @@ layout: default
         </header>
 
         <article class="page-content">
-          {{ content }}
+          <div class="row">
+            <h3>Description</h3>
+            <div class="col-xs-12">
+              {{ content }}
+            </div>
+          </div>
         </article>
+
+        {% for section in page.amenities %}
+          <div class="row">
+            <article class="page-content">
+              <h3>{{ section.first }}</h3>
+              {% for part in section[1] %}
+                <div class="col-xs-4 col-sm-3">
+                  {% if part[1] == null %}<i class="fa fa-check-square"></i>{% else %}<i class="fa {{ part[1] }}"></i>{% endif %} {{ part[0] }}
+                </div>
+              {% endfor %}
+            </article>
+          </div>
+        {% endfor %}
 
         <div class="row">
           <article class="page-content">
+            <h3>Photos</h3>
                   {% for photo in page.photos %}
                     <div class="col-xs-4 col-sm-3 imgcontainer">
                       <img src="{{ photo }}" alt="{{ page.title }}" /></br></br>
@@ -37,18 +56,6 @@ layout: default
           </article>
         </div>
 
-        {% for section in page.amenities %}
-          <div class="row">
-            <article class="page-content">
-              <h3>{{ section.first }}</h3>
-              {% for part in section[1] %}
-                <div class="col-xs-4 col-sm-3">
-                  {{ part[0] }}:{{ part[1] }}
-                </div>
-              {% endfor %}
-            </article>
-          </div>
-        {% endfor %}
       </div>
     </div>
   </div>
