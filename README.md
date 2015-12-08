@@ -1,5 +1,9 @@
 # README #
 
+This is a blog to host cottages.
+
+-------------------------------
+
 A simple blog template for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>.
 
 Uses:

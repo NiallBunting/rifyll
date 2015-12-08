@@ -1,7 +1,7 @@
 # Site settings
-title: Rifyll
+title: Ashbourne Holiday Cottages
 email: somename@somedomain.com
-description: "Just Another Jekyll Theme"
+description: "Ashbourne and surrounding area in the peak district."
 logo_location: "https://placeholdit.imgix.net/~text?txtsize=30&bg=F8F8F8&txtclr=002E62&txt=LOGO&w=100&h=100"
 
 #baseurl: "" # the subpath of your site, e.g. /blog/
@@ -11,6 +11,8 @@ logo_location: "https://placeholdit.imgix.net/~text?txtsize=30&bg=F8F8F8&txtclr=
 markdown: kramdown
 kramdown:
   input: GFM
+#gems:
+#- jekyll-sitemap
 
 highlighter: pygments
 
@@ -21,3 +23,7 @@ excerpt_separator: <!--more-->
 
 #show the jumbotron header on index page
 show_blog_header: true
+
+# Theme
+theme:
+  jumbotron_image: img/jumbotron.jpg

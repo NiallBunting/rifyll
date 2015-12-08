@@ -160,7 +160,14 @@ a{
 
 .label-tag{
   background-color: #002e62;
+  color: #ffffff;
 }
+
+.label-tag a{
+  background-color: #002e62;
+  color: #ffffff;
+}
+
 .blog-header{
   background-color: #f8f8f8
 }

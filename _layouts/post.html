@@ -11,12 +11,12 @@ layout: default
           <div class="post-metadata">
             <div> <i class="fa fa-calendar"></i>
               <time>
-                {{ page.date | date:'%A, %B %d, %Y'}}
+                {{ page.datesavailable }}
               </time>
             </div>
             <div> <i class="fa fa-tag"></i>
                 {% for tag in page.tags %}
-                  <span class="label label-tag">{{tag}}</span>
+                  <span class="label label-tag"><a href="{{site.url}}/tag/{{tag}}">{{tag}}</a></span>
                 {% endfor %}
             </div>
           </div>
@@ -26,6 +26,29 @@ layout: default
         <article class="page-content">
           {{ content }}
         </article>
+
+        <div class="row">
+          <article class="page-content">
+                  {% for photo in page.photos %}
+                    <div class="col-xs-4 col-sm-3 imgcontainer">
+                      <img src="{{ photo }}" alt="{{ page.title }}" /></br></br>
+                    </div>
+                  {% endfor %}
+          </article>
+        </div>
+
+        {% for section in page.amenities %}
+          <div class="row">
+            <article class="page-content">
+              <h3>{{ section.first }}</h3>
+              {% for part in section[1] %}
+                <div class="col-xs-4 col-sm-3">
+                  {{ part[0] }}:{{ part[1] }}
+                </div>
+              {% endfor %}
+            </article>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
