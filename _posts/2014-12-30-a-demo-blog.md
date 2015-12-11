@@ -1,9 +1,9 @@
 ---
 layout: post
-tags: Sleeps-5 Apartment In-town
+tags: Sleeps-2 Apartment In-town
 date: 2014-12-30
 thumbnail: http://placehold.it/100x100
-title: A Demo blog
+title: Town Apartment
 published: true
 photos:
 - http://placehold.it/100x100
@@ -18,9 +18,11 @@ photos:
 - http://placehold.it/100x100
 - http://placehold.it/100x100
 datesavailable: Avalible All Year
+lat: 53.014136
+lng: -1.733349
 amenities:
   Rooms:
-    Double 2: null
+    Double 1: null
     Single: null
     Bathroom: null
   Amenities:

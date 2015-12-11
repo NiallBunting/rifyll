@@ -171,3 +171,9 @@ a{
 .blog-header{
   background-color: #f8f8f8
 }
+
+/* Google Map Formatting */
+#map{
+  height: 400px;
+  width: 100%;
+}

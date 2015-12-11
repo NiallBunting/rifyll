@@ -16,7 +16,7 @@ layout: default
             </div>
             <div> <i class="fa fa-tag"></i>
                 {% for tag in page.tags %}
-                  <span class="label label-tag"><a href="{{site.url}}/tag/{{tag}}">{{tag}}</a></span>
+                  <span class="label label-tag"><a href="{{site.baseurl}}/tag/{{tag}}">{{tag}}</a></span>
                 {% endfor %}
             </div>
           </div>
@@ -56,7 +56,22 @@ layout: default
           </article>
         </div>
 
+        <div class="row">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+          function initMap(){var e=parseFloat(document.getElementById("lat").value),l=parseFloat(document.getElementById("lng").value),o={lat:e,lng:l},t=new google.maps.Map(document.getElementById("map"),{center:o,scrollwheel:!1,zoom:15});new google.maps.Marker({map:t,position:o,title:"Hello World!"})}google.maps.event.addDomListener(window,"load",initMap);
+        </script>
+          <article class="page-content">
+            <h3>Map</h3>
+            <input id="lat" type="hidden" value="{{ page.lat }}">
+            <input id="lng" type="hidden" value="{{ page.lng }}">
+              <div class="col-xs-12 imgcontainer">
+                <div id="map"></div>
+              </div>
+          </article>
+        </div>
       </div>
     </div>
   </div>
 </div>
+

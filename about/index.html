@@ -13,27 +13,15 @@ date: 2014-10-19 23:51
           <div class="row">
             <div class="col-lg-12">
               <div class="row">
-                <div class="col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
-                    <img class="img-circle img-responsive" 
-                    src="{{site.data.personal.gravatar}}">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="row">
                 <div class="centered-text col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
                   
-                  <div itemscope itemtype="http://schema.org/Person" >
-                    <h2> <span itemprop="name">{{site.data.personal.name}}</span></h2>
-                    <p itemprop="jobTitle">{{site.data.personal.position}}</p>
-                    <p><span itemprop="affiliation">{{site.data.personal.company}}</span></p>
+                  <div itemscope itemtype="http://schema.org/LocalBusiness" >
+                    <h2> <span itemprop="name">{{site.title}}</span></h2>
+                    <p itemprop="description">{{site.data.personal.short}}</p>
                     <p>
-                      <i class="fa fa-map-marker"></i> <span itemprop="addressRegion">{{site.data.personal.location}}</span>
+                      <i class="fa fa-map-marker"></i> <a href="{{ site.baseurl }}/ashbourne/"><span itemprop="addressRegion">{{site.data.personal.location}}</span></a>
                     </p>
-                    <p itemprop="email"> <i class="fa fa-envelope">&nbsp;</i> <a href="mailto:{{site.data.personal.email}}">{{site.data.personal.email}}</a> </p>
+                    <p itemprop="email"> <i class="fa fa-envelope">&nbsp;</i> <a href="mailto:{{ site.email }}">{{site.email}}</a> </p>
                   </div>
                 </div>
               </div>
@@ -52,16 +40,9 @@ date: 2014-10-19 23:51
           <div class="row">
             <div id="social-links" class=" col-lg-12">
                 <div class="row">
-                  {% for socialButton in site.data.personal.social %}
-                    <div class="col-xs-6 col-sm-3 col-md-2 col-lg-3 social-btn-holder">
-                        <a title="{{socialButton[0]}}" class="btn btn-social btn-block {{ socialButton[1].btnClass }}" 
-                            target="_BLANK" href="{{ socialButton[1].url }}">
-
-                            <i class="fa {{socialButton[1].logo}}"></i> {{ socialButton[1].text}}
-
-                        </a>
+                    <div class="col-xs-12">
+                      &nbsp;
                     </div>
-                  {% endfor %}
                 </div>
             </div>
           </div>
