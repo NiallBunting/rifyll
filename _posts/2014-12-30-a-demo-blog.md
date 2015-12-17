@@ -4,6 +4,9 @@ tags: Sleeps-2 Apartment In-town
 date: 2014-12-30
 thumbnail: http://placehold.it/100x100
 title: Town Apartment
+address: First line, Second line, Ashbourne.
+phone: 01335 999999
+website: http://www.example.com
 published: true
 photos:
 - http://placehold.it/100x100
