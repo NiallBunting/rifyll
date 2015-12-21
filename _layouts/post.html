@@ -9,26 +9,34 @@ layout: default
         <header class="page-header">
           <h3 class="page-title"><a href="{{page.url|prepend: site.baseurl}}">{{ page.title }}</a></h3>
           <div class="post-metadata">
-            <div> <i class="fa fa-location-arrow"></i>
-              <time>
-                {{ page.address }}
-              </time>
-            </div>
-            <div> <i class="fa fa-link"></i>
-              <time>
-                <a href="{{ page.website }}">{{ page.website }}</a>
-              </time>
-            </div>
-            <div> <i class="fa fa-phone"></i>
-              <time>
-                {{ page.phone }}
-              </time>
-            </div>
-            <div> <i class="fa fa-calendar"></i>
-              <time>
-                {{ page.datesavailable }}
-              </time>
-            </div>
+            {% if page.address != null %}
+              <div> <i class="fa fa-location-arrow"></i>
+                <time>
+                  {{ page.address }}
+                </time>
+              </div>
+            {% endif %}
+            {% if page.website != null %}
+              <div> <i class="fa fa-link"></i>
+                <time>
+                  <a href="{{ page.website }}">{{ page.website }}</a>
+                </time>
+              </div>
+            {% endif %}
+            {% if page.phone != null %}
+              <div> <i class="fa fa-phone"></i>
+                <time>
+                  {{ page.phone }}
+                </time>
+              </div>
+            {% endif %}
+            {% if page.datesavailable != null %}
+              <div> <i class="fa fa-calendar"></i>
+                <time>
+                  {{ page.datesavailable }}
+                </time>
+              </div>
+            {% endif %}
             <div> <i class="fa fa-tag"></i>
                 {% for tag in page.tags %}
                   <span class="label label-tag"><a href="{{site.baseurl}}/tag/{{tag}}">{{tag}}</a></span>

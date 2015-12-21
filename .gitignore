@@ -5,6 +5,10 @@ _site/
 # Operating System Files
 # =========================
 
+# Files
+*.swp
+
+
 # OSX
 # =========================
 
