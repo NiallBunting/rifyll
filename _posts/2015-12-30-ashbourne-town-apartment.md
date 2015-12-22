@@ -1,25 +1,22 @@
 ---
 layout: post
 tags: Sleeps-2 Apartment In-town
-date: 2014-12-30
-thumbnail: http://placehold.it/100x100
+date: 2015-12-30
+thumbnail: /img/stationstreet1.jpg
 title: Town Apartment
 address: Station Street, Ashbourne, DE6 1DF.
-phone: 01335 999999
+phone: null
+email: town-house@ashbourneholidayhomes.co.uk
 website: null
 published: true
 photos:
-- http://placehold.it/100x100
-- http://placehold.it/100x100
-- http://placehold.it/100x100
-- http://placehold.it/100x100
-- http://placehold.it/100x100
-- http://placehold.it/100x100
-- http://placehold.it/100x100
-- http://placehold.it/100x100
-- http://placehold.it/100x100
-- http://placehold.it/100x100
-- http://placehold.it/100x100
+- /img/stationstreet1.jpg
+- /img/stationstreet2.jpg
+- /img/stationstreet3.jpg
+- /img/stationstreet3.jpg
+- /img/stationstreet4.jpg
+- /img/stationstreet5.jpg
+- /img/stationstreet6.jpg
 datesavailable: Over Summer
 lat: 53.014136
 lng: -1.733349
