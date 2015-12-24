@@ -11,12 +11,6 @@ website: null
 published: true
 photos:
 - /img/stationstreet1.jpg
-- /img/stationstreet2.jpg
-- /img/stationstreet3.jpg
-- /img/stationstreet3.jpg
-- /img/stationstreet4.jpg
-- /img/stationstreet5.jpg
-- /img/stationstreet6.jpg
 datesavailable: Over Summer
 lat: 53.014136
 lng: -1.733349
