@@ -80,7 +80,9 @@ layout: default
             <h3>Photos</h3>
                   {% for photo in page.photos %}
                     <div class="col-xs-4 col-sm-3 imgcontainer">
-                      <img src="{{ photo }}" alt="{{ page.title }}" /></br></br>
+                      <a href="/img/{{ photo }}">
+                        <img src="/img/thumb/{{ photo }}" alt="{{ page.title }}" /></br></br>
+                      </a>
                     </div>
                   {% endfor %}
           </article>
