@@ -10,6 +10,7 @@ price: £70 per night
 email: null
 website: null
 published: true
+tripadvisor: https://www.tripadvisor.co.uk/VacationRentalReview-g499571-d10023839-Station_Street_Town_Apartment-Ashbourne_Derbyshire_England.html
 photos:
 - stationstreet1a.jpg
 - stationstreet1b.jpg
@@ -22,11 +23,10 @@ photos:
 - stationstreet3b.jpg
 - stationstreet3c.jpg
 - stationstreet3d.jpg
-- stationstreet3d.jpg
 - stationstreet4a.jpg
 - stationstreet4b.jpg
 - stationstreet4c.jpg
-datesavailable: Year Around
+datesavailable: Year Round (Minimum 2 nights)
 lat: 53.014136
 lng: -1.733349
 amenities:
